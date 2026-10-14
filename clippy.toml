@@ -1,0 +1,5 @@
+# Intentionally small. Grok-specific disallowed-methods (home_dir, canonicalize,
+# process spawn) are product policy and are not inherited here.
+#
+# Clippy uses the nearest clippy.toml with no merging.
+cognitive-complexity-threshold = 40

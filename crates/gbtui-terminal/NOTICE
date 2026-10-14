@@ -1,0 +1,15 @@
+gbtui-terminal includes code derived from the Ratatui terminal UI library
+(via xai-ratatui-inline in Grok Build).
+
+Ratatui is dual-licensed under the MIT License and the Apache License, Version 2.0.
+This crate’s forked Terminal / viewport implementation is based on Ratatui source.
+
+Upstream: https://github.com/ratatui/ratatui
+Copyright (c) 2023-2024 The Ratatui Developers
+Copyright (c) Florian Dehau (original tui-rs lineage, where applicable)
+
+Portions derived from xai-ratatui-inline / xai-grok-pager-render:
+Copyright 2023-2026 SpaceXAI / xAI, licensed under Apache-2.0.
+
+The remainder of this crate is licensed under the Apache License, Version 2.0
+(see the repository root LICENSE).

@@ -1,0 +1,37 @@
+[package]
+name = "gbtui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Terminal UI runtime and widgets extracted from Grok Build's TUI"
+readme = "../../README.md"
+
+[dependencies]
+crossterm = { workspace = true }
+gbtui-actions = { workspace = true }
+gbtui-core = { workspace = true }
+gbtui-input = { workspace = true }
+gbtui-runtime = { workspace = true }
+gbtui-terminal = { workspace = true }
+gbtui-widgets = { workspace = true }
+
+[features]
+default = ["clipboard"]
+clipboard = ["gbtui-widgets/clipboard"]
+images = ["gbtui-widgets/images"]
+theme-config = ["gbtui-core/theme-config"]
+
+[[example]]
+name = "media"
+path = "examples/media.rs"
+required-features = ["images"]
+
+[[example]]
+name = "themes"
+path = "examples/themes.rs"
+required-features = ["theme-config"]
+
+[lints]
+workspace = true

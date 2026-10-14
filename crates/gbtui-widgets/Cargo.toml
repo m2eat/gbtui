@@ -1,0 +1,43 @@
+[package]
+name = "gbtui-widgets"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "gbtui widgets (Button, TextArea, Modal, Picker, List, Overlay, …)"
+
+[dependencies]
+gbtui-core = { workspace = true }
+gbtui-runtime = { workspace = true }
+crossterm = { workspace = true }
+ratatui = { workspace = true }
+ratatui-core = { workspace = true }
+textwrap = { workspace = true }
+tui-scrollbar = { workspace = true }
+unicode-segmentation = { workspace = true }
+unicode-width = { workspace = true }
+fuzzy-matcher = { workspace = true }
+regex = { workspace = true }
+tracing = { workspace = true, optional = true }
+arboard = { workspace = true, optional = true }
+
+[dev-dependencies]
+chrono = { workspace = true }
+ignore = { workspace = true }
+itertools = { workspace = true }
+pretty_assertions = { workspace = true }
+rand = { workspace = true }
+
+[[example]]
+name = "textarea_demo"
+path = "examples/textarea_demo.rs"
+
+[features]
+default = ["clipboard"]
+clipboard = ["dep:arboard"]
+debug-logs = ["dep:tracing"]
+images = ["gbtui-runtime/images"]
+
+[lints]
+workspace = true

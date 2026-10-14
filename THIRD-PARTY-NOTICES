@@ -1,0 +1,19 @@
+Third-party notices
+===================
+
+This file will list license texts for crates.io / git dependencies shipped
+with gbtui binaries and examples.
+
+Until the first tagged release, run:
+
+    cargo tree --workspace
+
+and consult each crate's license field. Ratatui (MIT OR Apache-2.0) and
+crossterm (MIT) are the primary TUI dependencies.
+
+Vendored / forked source notices:
+
+- crates/gbtui-terminal/NOTICE  — Ratatui Terminal fork (MIT OR Apache-2.0)
+- crates/gbtui-widgets/NOTICE   — derived from xai-ratatui-textarea (Apache-2.0)
+- crates/gbtui-markdown/NOTICE  — streaming Markdown derivation and Tokyo Night syntax theme (Apache-2.0; palette lineage noted there)
+- NOTICE                        — Grok Build TUI derivation (Apache-2.0)

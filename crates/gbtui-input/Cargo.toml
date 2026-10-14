@@ -1,0 +1,16 @@
+[package]
+name = "gbtui-input"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Keyboard normalizer, scroll-stream coalescing, and type-ahead filters"
+
+[dependencies]
+crossterm = { workspace = true }
+gbtui-core = { workspace = true }
+gbtui-terminal = { workspace = true }
+
+[lints]
+workspace = true

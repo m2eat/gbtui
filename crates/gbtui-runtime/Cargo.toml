@@ -1,0 +1,27 @@
+[package]
+name = "gbtui-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Event loop, FrameCtx, HitMap, and demand-driven animation scheduler"
+
+[dependencies]
+crossterm = { workspace = true }
+futures-util = { version = "0.3", default-features = false, features = ["std", "async-await"] }
+gbtui-core = { workspace = true }
+gbtui-input = { workspace = true }
+gbtui-terminal = { workspace = true }
+ratatui = { workspace = true }
+tokio = { workspace = true, features = ["net"] }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+
+[features]
+default = []
+images = ["gbtui-terminal/images"]
+
+[lints]
+workspace = true

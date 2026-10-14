@@ -1,0 +1,35 @@
+# Rust build output; keep Cargo.lock for reproducible workspace builds.
+/target/
+**/target/
+**/*.rs.bk
+*.pdb
+
+# Local reference checkouts: not required to build or distribute gbtui.
+/sources/
+
+# Local environment and credentials; allow documented templates.
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Editors and local assistant state.
+.idea/
+.vscode/
+.grok/
+*.swp
+*.swo
+*~
+
+# OS metadata.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Generated coverage and profiling output.
+/coverage/
+/tarpaulin-report.html
+/cobertura.xml
+*.profraw
+*.profdata

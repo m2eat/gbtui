@@ -1,0 +1,24 @@
+[package]
+name = "gbtui-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Core primitives for the gbtui terminal UI runtime (theme, keys, ticks, rendering traits)"
+
+[features]
+default = []
+theme-config = ["dep:toml"]
+
+[dependencies]
+crossterm = { workspace = true }
+ratatui = { workspace = true }
+supports-color = { workspace = true }
+textwrap = { workspace = true }
+unicode-segmentation = { workspace = true }
+unicode-width = { workspace = true }
+toml = { workspace = true, optional = true }
+
+[lints]
+workspace = true

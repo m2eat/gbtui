@@ -1,0 +1,15 @@
+[package]
+name = "agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "gbtui-agent example: fake session (no LLM / no ACP)"
+publish = false
+
+[dependencies]
+crossterm = { workspace = true }
+gbtui = { workspace = true }
+gbtui-agent = { workspace = true }
+ratatui = { workspace = true }

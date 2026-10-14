@@ -1,0 +1,40 @@
+gbtui
+=====
+
+A terminal UI runtime and widget library extracted from Grok Build's TUI.
+
+This product includes original work and portions derived from Grok Build:
+
+  crates/codegen/xai-ratatui-inline
+  crates/codegen/xai-ratatui-textarea
+  crates/codegen/xai-grok-pager-render
+  crates/codegen/xai-grok-pager  (selected views / input / runtime primitives only)
+  crates/codegen/xai-grok-markdown
+  crates/codegen/xai-grok-markdown-core
+
+Copyright 2023-2026 SpaceXAI / xAI
+Licensed under the Apache License, Version 2.0.
+
+The remainder of this project is licensed under the Apache License, Version 2.0.
+See the LICENSE file in the repository root.
+
+Ratatui fork
+------------
+
+`gbtui-terminal` includes a forked `Terminal` / inline-viewport implementation
+derived from Ratatui (MIT OR Apache-2.0).
+
+Upstream: https://github.com/ratatui/ratatui
+Copyright (c) 2023-2024 The Ratatui Developers
+Copyright (c) Florian Dehau (original tui-rs lineage, where applicable)
+
+See crates/gbtui-terminal/NOTICE.
+
+Textarea
+--------
+
+`gbtui-widgets` includes a text-editing widget derived from
+`xai-ratatui-textarea` (Apache-2.0). See crates/gbtui-widgets/NOTICE.
+
+This project is not Grok, xAI, or SpaceXAI. Product names and brand assets
+from Grok Build are not part of this framework.

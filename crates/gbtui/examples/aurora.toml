@@ -1,0 +1,19 @@
+name = "aurora"
+kind = "auto"
+background = "terminal"
+
+[colors]
+accent = "#4a9eaa"
+fuzzy_accent = "#4a9eaa"
+
+[styles.button.focused]
+fg = "#ffffff"
+bg = "#275d68"
+modifiers = ["bold", "underlined"]
+
+[styles.link.normal]
+fg = "#4a9eaa"
+modifiers = ["underlined"]
+
+[styles.selection.selected]
+modifiers = ["bold", "underlined"]

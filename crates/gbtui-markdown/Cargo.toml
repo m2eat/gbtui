@@ -1,0 +1,31 @@
+[package]
+name = "gbtui-markdown"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Streaming markdown renderer for terminal UIs"
+
+[dependencies]
+anstyle = { workspace = true }
+anstyle-lossy = { workspace = true }
+anstyle-syntect = { workspace = true }
+gbtui-markdown-core = { workspace = true }
+html-escape = { workspace = true }
+linkify = { workspace = true }
+pulldown-cmark = { workspace = true }
+ratatui = { workspace = true }
+supports-color = { workspace = true }
+syntect = { workspace = true }
+textwrap = { workspace = true }
+two-face = { workspace = true }
+unicode-segmentation = { workspace = true }
+unicode-width = { workspace = true }
+url = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+
+[lints]
+workspace = true

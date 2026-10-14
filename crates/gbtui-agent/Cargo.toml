@@ -1,0 +1,21 @@
+[package]
+name = "gbtui-agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Optional agent-CLI chrome stacked on the gbtui facade (transcript, tools, permissions, slash palette)"
+readme = "../../README.md"
+
+[dependencies]
+crossterm = { workspace = true }
+gbtui = { workspace = true }
+ratatui = { workspace = true }
+unicode-width = { workspace = true }
+unicode-segmentation = { workspace = true }
+gbtui-markdown = { workspace = true }
+anstyle = { workspace = true }
+
+[lints]
+workspace = true

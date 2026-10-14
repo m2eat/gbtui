@@ -1,0 +1,42 @@
+[package]
+name = "gbtui-terminal"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+description = "Terminal probing, Kitty keyboard, color quantization, and inline viewport Terminal"
+
+[dependencies]
+gbtui-core = { workspace = true }
+anstyle-parse = { workspace = true }
+crossterm = { workspace = true }
+dark-light = { workspace = true }
+ratatui = { workspace = true }
+strum = { workspace = true }
+unicode-width = { workspace = true }
+termwiz = { workspace = true, default-features = false }
+image = { workspace = true, optional = true }
+base64 = { workspace = true, optional = true }
+
+[target.'cfg(unix)'.dependencies]
+rustix = { version = "=1.1.4", default-features = false, features = ["event", "fs", "std", "termios"] }
+[dev-dependencies]
+ansi-width = { workspace = true }
+anyhow = { workspace = true }
+colored_json = { workspace = true }
+criterion = { workspace = true }
+lipsum = { workspace = true }
+serde_json = { workspace = true }
+
+[[bench]]
+name = "bench"
+harness = false
+
+[features]
+default = []
+scrolling-regions = ["ratatui/scrolling-regions"]
+images = ["dep:image", "dep:base64"]
+
+[lints]
+workspace = true

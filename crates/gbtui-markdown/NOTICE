@@ -1,0 +1,26 @@
+gbtui-markdown
+==============
+
+Derived from Grok Build's xai-grok-markdown and xai-grok-markdown-core.
+Copyright 2023-2026 SpaceXAI / xAI
+Licensed under the Apache License, Version 2.0.
+See the repository LICENSE for the full license text.
+
+This extraction removes product dependencies and diagram rendering, adds
+monochrome default styling and code-line metadata, and integrates with gbtui.
+
+Tokyo Night
+-----------
+The bundled assets/tokyo-night.tmTheme retains the attribution provided by
+Grok Build's THIRD-PARTY-NOTICES:
+
+Source: https://github.com/folke/tokyonight.nvim
+License: Apache-2.0
+Copyright holders / authors: Folke Lemaitre and contributors.
+
+Original Tokyo Night VS Code palette lineage: enkia / tokyo-night
+https://github.com/enkia/tokyo-night-vscode-theme (upstream MIT).
+
+The palette and bundled TextMate theme are attributed under Apache-2.0 via
+the nvim port, the primary reference identified by the source distribution;
+the VS Code lineage is noted for completeness.
