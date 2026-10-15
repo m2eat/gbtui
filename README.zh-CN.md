@@ -1,6 +1,6 @@
 # gbtui
 
-**通用 Rust 终端 UI 运行时与组件库。**
+**从 Grok Build 抽取的通用 Rust 终端 UI 运行时与组件库。**
 
 [English](README.md) | **简体中文**
 
@@ -23,13 +23,13 @@
 
 ## 5 分钟上手
 
-当前使用本地路径依赖；以下路径应指向你的 checkout，并非 crates.io 安装指令。
+通过固定版本的 Git tag 引用（需要 Rust 1.94 或更新版本）。本版本通过 GitHub 分发，尚未发布到 crates.io。
 
 `Cargo.toml`：
 
 ```toml
 [dependencies]
-gbtui = { path = "../gbtui/crates/gbtui" }  # 或你的路径
+gbtui = { git = "https://github.com/m2eat/gbtui.git", tag = "v0.1.0" }
 ```
 
 ```rust

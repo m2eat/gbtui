@@ -1,6 +1,6 @@
 # gbtui
 
-**A general-purpose terminal UI runtime and widget library for Rust.**
+**A Rust terminal UI runtime and widget library extracted from Grok Build.**
 
 **English** | [简体中文](README.zh-CN.md)
 
@@ -22,11 +22,11 @@ This is a generic framework, **not a Grok Build product replica**. It does not p
 
 ## Quick start
 
-Use a local checkout dependency. Adjust the path to your checkout; this is not a crates.io installation instruction.
+Depend on the versioned Git release (Rust 1.94 or newer). This release is distributed through GitHub, not crates.io.
 
 ```toml
 [dependencies]
-gbtui = { path = "../gbtui/crates/gbtui" }
+gbtui = { git = "https://github.com/m2eat/gbtui.git", tag = "v0.1.0" }
 ```
 
 ```rust
